@@ -1,0 +1,16 @@
+{
+  "id": "18aba5fa-8e3d-786f-ad54-cd0ae53e1003",
+  "name": "Nimbi - Api001",
+  "values": [
+    {
+      "key": "host",
+      "value": "https://api001.nimbi.com.br/API/rest",
+      "type": "text",
+      "enabled": true
+    }
+  ],
+  "timestamp": 1486143204101,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-02-03T17:51:49.926Z",
+  "_postman_exported_using": "Postman/4.9.2"
+}

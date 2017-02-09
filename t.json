@@ -1,0 +1,176 @@
+{
+	"id": "9f014274-bf50-293f-7b64-570bb25458ea",
+	"name": "API Nimbi",
+	"allTests": [],
+	"timestamp": 1486127897771,
+	"collection_id": "cfa6f985-dca8-c485-68ff-cd780471ebb7",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "18aba5fa-8e3d-786f-ad54-cd0ae53e1003",
+	"data": [],
+	"delay": 0,
+	"count": 3,
+	"collection": {
+		"id": "cfa6f985-dca8-c485-68ff-cd780471ebb7",
+		"name": "API Nimbi",
+		"description": "",
+		"order": [
+			"cce8da26-f75e-d1ec-3a7d-23f798018415"
+		],
+		"folders": [],
+		"requests": [
+			{
+				"id": "cce8da26-f75e-d1ec-3a7d-23f798018415",
+				"headers": "ClientAPI_ID: ea8558d7-6e91-474f-bbe0-22674a4a364b\nClientAPI_Key: 17c51f92-ba78-4645-bfba-0f1f17b693d0\n",
+				"url": "{{host}}/ConnectivityTest/v1/TestConnectivity",
+				"preRequestScript": null,
+				"pathVariables": {},
+				"method": "GET",
+				"data": null,
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Response time is less than 200ms\"] = responseTime < 200;",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1486127731221,
+				"name": "ConnectivityTest",
+				"description": "",
+				"collectionId": "cfa6f985-dca8-c485-68ff-cd780471ebb7",
+				"responses": []
+			}
+		],
+		"timestamp": 1486126503319,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "1514355",
+		"subscribed": false,
+		"createdAt": 1486126503334,
+		"updatedAt": 1486127582024,
+		"write": true,
+		"isDeleted": false,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "echo_digest_realm",
+			"type": "text",
+			"value": "Users",
+			"enabled": true
+		},
+		{
+			"key": "echo_digest_nonce",
+			"type": "text",
+			"value": "bMifktLw5ZTRjcENsQY6mBExsYMHpYZ1",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"id": "cce8da26-f75e-d1ec-3a7d-23f798018415",
+			"name": "ConnectivityTest",
+			"url": "{{host}}/ConnectivityTest/v1/TestConnectivity",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				39,
+				32,
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			],
+			"time": 39,
+			"totalRequestTime": 103,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 6,
+	"totalFail": 0,
+	"totalTime": 103,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "ConnectivityTest",
+			"id": "cce8da26-f75e-d1ec-3a7d-23f798018415",
+			"url": "{{host}}/ConnectivityTest/v1/TestConnectivity",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Response time is less than 200ms"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				],
+				[
+					true,
+					true
+				],
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			}
+		}
+	],
+	"synced": false
+}
